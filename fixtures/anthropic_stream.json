@@ -1,0 +1,7 @@
+{
+  "tool": "anthropic",
+  "url": "https://api.anthropic.com/v1/messages",
+  "content_type": "text/event-stream",
+  "request": "{\"model\": \"claude-3-5-sonnet-20241022\", \"messages\": [{\"role\": \"user\", \"content\": \"Explain canonical events in one sentence.\"}], \"max_tokens\": 256}",
+  "response": "event: message_start\ndata: {\"type\": \"message_start\"}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"delta\": {\"type\": \"text_delta\", \"text\": \"A canonical event \"}}\n\nevent: content_block_delta\ndata: {\"type\": \"content_block_delta\", \"delta\": {\"type\": \"text_delta\", \"text\": \"is a stable normalized record of AI usage.\"}}\n\nevent: message_stop\ndata: {\"type\": \"message_stop\"}\n"
+}
