@@ -1,4 +1,3 @@
-"""Runtime configuration for the Oximy demo proxy."""
 
 import os
 from enum import Enum
